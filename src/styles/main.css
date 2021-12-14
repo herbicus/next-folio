@@ -12,10 +12,33 @@ a:hover {
 
 @tailwind utilities;
 
-.content p {
+.project figcaption {
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .project img {
+    transition: opacity .4s ease;
+  }
+
+  .project:hover img {
+    opacity: .3;
+  }
+
+  .project:hover figcaption {
+    opacity: 1;
+  }
+}
+
+.contact {
+  min-height: 89vh;
+}
+
+/* .content p {
   @apply mb-6;
 }
 
 .content ul {
   @apply mb-6;
-}
+} */
