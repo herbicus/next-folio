@@ -11,7 +11,7 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => (
-  <div className="antialiased w-full text-primary-500">
+  <div className="antialiased leading-tight w-full text-primary-500">
     {props.meta}
 
     <Navigation />

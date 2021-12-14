@@ -12,18 +12,37 @@ a:hover {
 
 @tailwind utilities;
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  @apply tracking-[.1px]
+}
+
+p,
+a,
+span {
+  @apply leading-normal;
+  @apply font-normal;
+}
+
 .project figcaption {
   opacity: 0;
+}
+
+.project img,
+.project figcaption {
   transition: opacity .4s ease;
 }
 
 @media screen and (min-width: 768px) {
-  .project img {
-    transition: opacity .4s ease;
-  }
-
   .project:hover img {
-    opacity: .3;
+    opacity: .125;
   }
 
   .project:hover figcaption {
@@ -34,11 +53,3 @@ a:hover {
 .contact {
   min-height: 89vh;
 }
-
-/* .content p {
-  @apply mb-6;
-}
-
-.content ul {
-  @apply mb-6;
-} */

@@ -21,32 +21,31 @@ const Index = () => {
         <div className="max-w-screen-lg mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center">
             {projects.map((project: any) => (
-              <div key={project.Id}>
+              <figure key={project.Id} className="relative text-center">
                 <Link href={`/projects/${project.Slug}`}>
                   <a className="project" title={`${project.Title}`}>
-                    <figure className="relative text-center">
-                      <img
-                        className="object-contain"
-                        src={`${router.basePath}/assets/images/thumbnails/${project.Thumbnail}`}
-                        alt={`${project.Title}`}
-                      />
-                      <figcaption className="absolute top-2/4 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[100%] text-gray-900">
-                        <p className="font-display font-black text-lg mb-2">
-                          {project.Title}
-                        </p>
-                        <p className="text-sm font-medium">
-                          {project.Thumbnail_caption}
-                        </p>
-                      </figcaption>
-                    </figure>
+                    <img
+                      className="object-contain"
+                      src={`${router.basePath}/assets/images/thumbnails/${project.Thumbnail}`}
+                      alt={`${project.Title}`}
+                      loading="lazy"
+                    />
+                    <figcaption className="absolute top-2/4 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[100%] text-gray-900">
+                      <p className="font-display font-black text-lg mb-1">
+                        {project.Title}
+                      </p>
+                      <p className="text-sm font-medium">
+                        {project.Thumbnail_caption}
+                      </p>
+                    </figcaption>
                   </a>
                 </Link>
-              </div>
+              </figure>
             ))}
           </div>
         </div>
 
-        <h1 className="font-display font-extrabold text-5xl md:text-6xl">
+        {/* <h1 className="font-display font-extrabold text-5xl md:text-6xl">
           Headline 1 extrabold
         </h1>
         <h1 className="font-display font-black text-5xl md:text-6xl">
@@ -65,7 +64,7 @@ const Index = () => {
         <h6 className="font-sans text-xl">Headline 6</h6>
         <p className="font-sans text-base">Paragraph</p>
         <p className="font-sans text-sm">Paragraph small</p>
-        <p className="font-sans text-xs">Paragraph extrasmall</p>
+        <p className="font-sans text-xs">Paragraph extrasmall</p> */}
       </div>
     </Main>
   );

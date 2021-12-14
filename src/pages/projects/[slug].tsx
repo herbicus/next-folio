@@ -21,12 +21,15 @@ export default function Project({ project }: any) {
         <div className="max-w-screen-xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12">
             <div className="col-span-1 sm:col-span-6 md:col-span-4">
-              <h1 className="font-display font-black text-3xl md:text-4xl mb-5 md:mb-6">
+              <h1 className="font-display font-black text-3xl md:text-4xl mb-5">
                 {project.Title}
               </h1>
-              <div className="mb-5">
+              <h2 className="font-sans font-semibold text-lg md:text-xl mb-5">
+                {project.Thumbnail_caption}
+              </h2>
+              <div className="mb-8">
                 {project.Text.map((block: any) => (
-                  <p key={project.Id} className="text-base mb-3 last:mb-0">
+                  <p key={project.Id} className="text-base mb-5 last:mb-0">
                     {block}
                   </p>
                 ))}
@@ -34,7 +37,7 @@ export default function Project({ project }: any) {
 
               <Link href={`${project.Link}`}>
                 <a
-                  className="text-gray-700 border-none font-medium text-base uppercase hover:text-gray-900"
+                  className="text-primary-500 border-none font-semibold text-sm uppercase hover:text-red-500"
                   target="_blank"
                   rel="nofollow noreferrer"
                 >
@@ -45,9 +48,9 @@ export default function Project({ project }: any) {
 
             <div className="col-span-1 md:col-span-8 pl-0 md:pl-12">
               {project.Images.map((image: any) => (
-                <div key={project.Id}>
+                <div key={project.Id} className="mb-5 last:mb-0">
                   <img
-                    className="mb-4"
+                    className="object-contain"
                     src={`${router.basePath}/assets/images/preview/${image}`}
                     alt={`${project.A11y}`}
                   />
