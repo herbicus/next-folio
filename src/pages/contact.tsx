@@ -8,7 +8,7 @@ const Contact = () => {
 
   return (
     <Main meta={<Meta title="Contact" description="Herb Torres | Contact" />}>
-      <div className="contact px-4 md:px-8 pt-14 md:pt-24 relative">
+      <div className="contact px-4 md:px-8 pt-10 md:pt-18 relative">
         <img
           className="absolute top-2/4 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[100%] h-[100%] object-cover z-0"
           src={`${router.basePath}/assets/images/contact-bg.jpg`}

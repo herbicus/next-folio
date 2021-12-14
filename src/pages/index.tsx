@@ -17,7 +17,7 @@ const Index = () => {
         />
       }
     >
-      <div className="px-4 md:px-8 pt-12 md:pt-20">
+      <div className="px-4 md:px-8 pt-10 md:pt-18">
         <div className="max-w-screen-lg mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center">
             {projects.map((project: any) => (
