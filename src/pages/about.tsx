@@ -9,7 +9,7 @@ const About = () => {
   return (
     <Main meta={<Meta title="About" description="Herb Torres | About" />}>
       <div className="px-4 md:px-8 pt-10 md:pt-18">
-        <div className="max-w-screen-xl mx-auto">
+        <div className="max-w-screen-lg mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 justify-items-center">
             <div className="col-span-1 md:col-span-8 pr-0 md:pr-12">
               <img

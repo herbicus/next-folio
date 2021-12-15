@@ -12,13 +12,25 @@ export default function Project({ project }: any) {
     <Main
       meta={
         <Meta
-          title="Herb Torres | Project"
-          description="Herb Torres | Project"
+          title={`Herb Torres | ${project.Title}`}
+          description={`Herb Torres | ${project.Title}`}
         />
       }
     >
       <div className="px-4 md:px-8 pt-10 md:pt-18">
-        <div className="max-w-screen-xl mx-auto">
+        <div className="max-w-screen-lg mx-auto relative">
+          <div className="absolute top-0 right-0 md:right-[-24px]">
+            <Link href="/">
+              <a className="border-0 hover:border-0 text-gray-150 hover:text-primary-500">
+                <svg id="close" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                  ></path>
+                </svg>
+              </a>
+            </Link>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-12">
             <div className="col-span-1 sm:col-span-6 md:col-span-4">
               <h1 className="font-display font-black text-3xl md:text-4xl mb-5">

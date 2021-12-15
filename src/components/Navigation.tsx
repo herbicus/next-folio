@@ -169,9 +169,68 @@ const Navigation = () => {
             </Link>
           </li>
         </ul>
-        {/* <svg id="menu" viewBox="0 0 24 24">
-          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-        </svg> */}
+
+        <input type="checkbox" id="menu-open" className="hidden" />
+
+        <label
+          htmlFor="menu-open"
+          id="mobile-menu-button"
+          className="m-2 p-2 text-primary-500 focus:outline"
+        >
+          <svg
+            id="menu-open-icon"
+            className="transition duration-200 ease-in-out"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+            ></path>
+          </svg>
+          <svg
+            id="menu-close-icon"
+            className="transition duration-200 ease-in-out"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+            ></path>
+          </svg>
+        </label>
+
+        <aside
+          id="sidebar"
+          className="bg-primary-500 text-white md:w-64 w-3/4 space-y-6 pt-6 px-0 absolute inset-y-0 left-0 h-[100vh] transform md:relative md:translate-x-0 transition duration-200 ease-in-out md:hidden overflow-y-auto z-50"
+        >
+          <ul className="flex flex-wrap">
+            <li className="mr-6">
+              <Link href="/">
+                <a className="text-gray-150  border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500">
+                  Home
+                </a>
+              </Link>
+            </li>
+            <li className="mr-6">
+              <Link href="/about/">
+                <a className="text-gray-150  border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500">
+                  About
+                </a>
+              </Link>
+            </li>
+            <li className="mr-0">
+              <Link href="/contact/">
+                <a className="text-gray-150  border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500">
+                  Contact
+                </a>
+              </Link>
+            </li>
+          </ul>
+        </aside>
       </nav>
     </header>
   );
