@@ -9,9 +9,9 @@ const About = () => {
   return (
     <Main meta={<Meta title="About" description="Herb Torres | About" />}>
       <div className="px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
-        <div className="max-w-screen-lg mx-auto">
+        <div className="max-w-screen-lg mx-auto mb-10 md:mb-14">
           <div className="grid grid-cols-1 md:grid-cols-12 justify-items-center">
-            <div className="col-span-1 md:col-span-8 pr-0 md:pr-12">
+            <div className="col-span-1 md:col-span-8 pr-0 md:pr-12 mb-8 md:mb-0">
               <img
                 src={`${router.basePath}/assets/images/about-img.jpg`}
                 alt="Herb Torres"
@@ -134,14 +134,14 @@ const About = () => {
                 </svg>
               </div>
 
-              <p className="font-sans text-base">
+              <p className="text-base mb-4">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Ratione fuga recusandae quidem. Quaerat molestiae blanditiis
                 doloremque possimus labore voluptatibus distinctio recusandae
                 autem esse explicabo molestias officia placeat, accusamus aut
                 saepe.
               </p>
-              <p className="font-sans text-base">
+              <p className="text-base">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Ratione fuga recusandae quidem. Quaerat molestiae blanditiis
                 doloremque possimus labore voluptatibus distinctio recusandae
@@ -154,6 +154,26 @@ const About = () => {
               </svg> */}
             </div>
           </div>
+        </div>
+
+        <div className="max-w-screen-md mx-auto">
+          <p className="font-semibold mb-2">
+            Languages, Libraries and Frameworks
+          </p>
+          <p className="mb-4">
+            HTML(5) | CSS(3) | LESS | SASS | Javascript | Node.js | ES6+| React
+            | React Hooks | Next.js | Redux | Polymer | Vue | GSAP |
+            BodyMovin.js | JSON | Google AMP | Angular.js | GIT | Firebase |
+            ESLint | Prettier | Styled Components | lodash | AppEngine | Google
+            Double Click Studios | Litmus, Twitter Bootstrap | Zerb Foundation |
+            Google Maps API
+          </p>
+          <p className="font-semibold mb-2">Tools</p>
+          <p>
+            VSCode, GitHub Atom, Webpack, iTerm, ZSH, Gulp.js, Yeoman, jsFiddle,
+            Codepen, Photoshop, Illustrator, Premiere, After Effects, Adobe
+            Suite, DoubleClick Studios, Litmus, Microsoft Office, Windows/OSX
+          </p>
         </div>
       </div>
     </Main>
