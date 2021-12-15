@@ -1,3 +1,6 @@
+/* eslint-disable no-console */
+import { useState } from 'react';
+
 import Link from 'next/link';
 // import { useRouter } from 'next/router';
 
@@ -10,19 +13,21 @@ import Link from 'next/link';
 
 const Navigation = () => {
   // const router = useRouter();
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    // <div className="px-4 md:px-8 pt-14 md:pt-24"></div>
-    <header className="py-1 md:py-2 px-4 md:px-8 text-white  shadow">
+    <header className="py-1 md:py-2 px-4 md:px-8 text-white shadow">
       <nav className="flex flex-row flex-nowrap items-center justify-between max-w-screen-xl mx-auto">
         <Link href="/">
-          <a className="border-0 hover:border-0">
+          <a className="border-0 hover:border-0" title="Home">
             <svg
               version="1.1"
               id="folio-logo-full"
               width="371.067"
               height="47.013"
               viewBox="0 0 371.067 47.013"
-              className="hidden md:block max-w-[14rem]"
+              className="max-w-[12rem] md:max-w-[14rem]"
             >
               <polygon
                 fill="#CD4829"
@@ -110,76 +115,52 @@ const Navigation = () => {
             c-1.377,0.385-2.582,0.614-3.619,0.693c-1.038,0.084-2.421,0.123-4.143,0.123C353.213,39.267,349.364,38.851,345.82,38.022z"
               ></path>
             </svg>
-            <svg
-              version="1.1"
-              id="folio-logo"
-              width="94.026"
-              height="47.013"
-              viewBox="0 0 94.026 47.013"
-              className="block md:hidden max-w-[3.25rem]"
-            >
-              <polygon
-                fill="#CD4829"
-                points="0.034,20.246 0,26.443 39.603,47.013 39.603,40.201 "
-              ></polygon>{' '}
-              <polygon
-                fill="#393A39"
-                points="6.216,23.336 39.603,6.645 39.603,0 0.034,20.246 "
-              ></polygon>{' '}
-              <polygon
-                fill="#CD4829"
-                points="19.042,16.923 32.123,23.166 41.358,18.199 28.634,12.128 "
-              ></polygon>{' '}
-              <polygon
-                fill="#CD4829"
-                points="85.513,20.467 46.11,0 46.11,6.813 79.325,23.591 "
-              ></polygon>{' '}
-              <polygon
-                fill="#393A39"
-                points="46.11,40.369 46.11,47.013 85.513,26.855 85.513,20.467 "
-              ></polygon>{' '}
-              <polygon
-                fill="#CD4829"
-                points="66.67,30.089 53.592,23.848 44.355,28.814 57.078,34.884 "
-              ></polygon>
-            </svg>
           </a>
         </Link>
 
-        <ul className="flex flex-wrap">
+        <ul className="hidden md:flex flex-wrap">
           <li className="mr-6">
             <Link href="/">
-              <a className="text-gray-150  border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500">
+              <a
+                className="text-gray-150  border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500"
+                title="Home"
+              >
                 Home
               </a>
             </Link>
           </li>
           <li className="mr-6">
             <Link href="/about/">
-              <a className="text-gray-150  border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500">
+              <a
+                className="text-gray-150  border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500"
+                title="About"
+              >
                 About
               </a>
             </Link>
           </li>
           <li className="mr-0">
             <Link href="/contact/">
-              <a className="text-gray-150  border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500">
+              <a
+                className="text-gray-150  border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500"
+                title="Contact"
+              >
                 Contact
               </a>
             </Link>
           </li>
         </ul>
 
-        <input type="checkbox" id="menu-open" className="hidden" />
-
-        <label
-          htmlFor="menu-open"
-          id="mobile-menu-button"
-          className="m-2 p-2 text-primary-500 focus:outline"
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-primary-500 focus:outline md:hidden"
+          role="button"
         >
           <svg
             id="menu-open-icon"
-            className="transition duration-200 ease-in-out"
+            className={`${
+              isOpen ? 'hidden' : 'block'
+            } transition duration-200 ease-in-out`}
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -191,7 +172,9 @@ const Navigation = () => {
           </svg>
           <svg
             id="menu-close-icon"
-            className="transition duration-200 ease-in-out"
+            className={`${
+              isOpen ? 'block' : 'hidden'
+            } transition duration-200 ease-in-out`}
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -201,37 +184,75 @@ const Navigation = () => {
               d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
             ></path>
           </svg>
-        </label>
-
-        <aside
-          id="sidebar"
-          className="bg-primary-500 text-white md:w-64 w-3/4 space-y-6 pt-6 px-0 absolute inset-y-0 left-0 h-[100vh] transform md:relative md:translate-x-0 transition duration-200 ease-in-out md:hidden overflow-y-auto z-50"
-        >
-          <ul className="flex flex-wrap">
-            <li className="mr-6">
-              <Link href="/">
-                <a className="text-gray-150  border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500">
-                  Home
-                </a>
-              </Link>
-            </li>
-            <li className="mr-6">
-              <Link href="/about/">
-                <a className="text-gray-150  border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500">
-                  About
-                </a>
-              </Link>
-            </li>
-            <li className="mr-0">
-              <Link href="/contact/">
-                <a className="text-gray-150  border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500">
-                  Contact
-                </a>
-              </Link>
-            </li>
-          </ul>
-        </aside>
+        </button>
       </nav>
+
+      <aside
+        id="sidebar"
+        className={`${
+          isOpen ? 'translate-x-0' : 'translate-x-[-100%]'
+        } bg-white text-primary-500 md:w-64 w-3/4 space-y-6 absolute inset-y-0 left-0 h-[100vh] transform md:relative transition duration-200 ease-in-out md:hidden overflow-y-auto z-20 shadow-xl`}
+      >
+        <div className="pt-1 pb-2 pl-[.925em]">
+          <svg
+            version="1.1"
+            id="folio-logo"
+            width="94.026"
+            height="47.013"
+            viewBox="0 0 94.026 47.013"
+            className="max-w-[3rem]"
+          >
+            <polygon
+              fill="#CD4829"
+              points="0.034,20.246 0,26.443 39.603,47.013 39.603,40.201 "
+            ></polygon>{' '}
+            <polygon
+              fill="#393A39"
+              points="6.216,23.336 39.603,6.645 39.603,0 0.034,20.246 "
+            ></polygon>{' '}
+            <polygon
+              fill="#CD4829"
+              points="19.042,16.923 32.123,23.166 41.358,18.199 28.634,12.128 "
+            ></polygon>{' '}
+            <polygon
+              fill="#CD4829"
+              points="85.513,20.467 46.11,0 46.11,6.813 79.325,23.591 "
+            ></polygon>{' '}
+            <polygon
+              fill="#393A39"
+              points="46.11,40.369 46.11,47.013 85.513,26.855 85.513,20.467 "
+            ></polygon>{' '}
+            <polygon
+              fill="#CD4829"
+              points="66.67,30.089 53.592,23.848 44.355,28.814 57.078,34.884 "
+            ></polygon>
+          </svg>
+        </div>
+        <div className="bg-red-500 block h-[2px] w-16 !mt-2 ml-4"></div>
+        <ul className="block px-4">
+          <li className="mb-10">
+            <Link href="/">
+              <a className="text-gray-150 border-0 hover:border-0 font-medium text-base md:text-base uppercase">
+                Home
+              </a>
+            </Link>
+          </li>
+          <li className="mb-10">
+            <Link href="/about/">
+              <a className="text-gray-150 border-0 hover:border-0 font-medium text-base md:text-base uppercase">
+                About
+              </a>
+            </Link>
+          </li>
+          <li className="mb-0">
+            <Link href="/contact/">
+              <a className="text-gray-150 border-0 hover:border-0 font-medium text-base md:text-base uppercase">
+                Contact
+              </a>
+            </Link>
+          </li>
+        </ul>
+      </aside>
     </header>
   );
 };

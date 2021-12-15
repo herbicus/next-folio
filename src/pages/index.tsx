@@ -17,9 +17,9 @@ const Index = () => {
         />
       }
     >
-      <div className="px-4 md:px-8 pt-10 md:pt-18">
+      <div className="px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
         <div className="max-w-screen-lg mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-items-center">
             {projects.map((project: any) => (
               <figure key={project.Id} className="relative text-center">
                 <Link href={`/projects/${project.Slug}`}>

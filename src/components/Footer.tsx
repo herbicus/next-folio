@@ -4,9 +4,9 @@ import { AppConfig } from '../utils/AppConfig';
 
 const Footer = () => {
   return (
-    <footer className="border-t bg-[#393b39] mt-10 py-10 px-4 md:px-8 text-sm">
-      <nav className="max-w-screen-xl mx-auto flex flex-wrap justify-between items-center">
-        <p className="text-gray-150 text-xs">
+    <footer className="border-t bg-[#393b39] py-10 px-4 md:px-8 text-sm">
+      <nav className="max-w-screen-xl mx-auto flex flex-wrap justify-end sm:justify-between items-center">
+        <p className="text-gray-150 text-xs hidden sm:block">
           © {new Date().getFullYear()} {AppConfig.footer_label}
         </p>
         <ul className="flex flex-nowrap">

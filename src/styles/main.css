@@ -50,33 +50,12 @@ span {
   }
 }
 
-#sidebar {
-  --tw-translate-x: -100%;
-}
-
-#menu-close-icon {
-  display: none;
-}
-
-#menu-open:checked ~ #sidebar {
-  --tw-translate-x: 0;
-}
-
-
-#menu-open:checked ~ * #menu-open-icon {
-  display: none;
-}
-
-#menu-open:checked ~ * #menu-close-icon {
-  display: block;
-}
-
-@media (min-width: 768px) {
-  #sidebar {
-    --tw-translate-x: 0;
-  }
-}
-
 .contact {
-  min-height: 89vh;
+  min-height: calc(100vh - 168px);
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    min-height: calc(100vh - 176px);
+  }
 }

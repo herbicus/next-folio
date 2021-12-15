@@ -17,7 +17,7 @@ export default function Project({ project }: any) {
         />
       }
     >
-      <div className="px-4 md:px-8 pt-10 md:pt-18">
+      <div className="px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
         <div className="max-w-screen-lg mx-auto relative">
           <div className="absolute top-0 right-0 md:right-[-24px]">
             <Link href="/">
@@ -70,7 +70,7 @@ export default function Project({ project }: any) {
               </Link>
             </div>
 
-            <div className="col-span-1 md:col-span-8 pl-0 md:pl-12">
+            <div className="col-span-1 md:col-span-8 pl-0 md:pl-12 mt-12 md:mt-0">
               {project.Images.map((image: any) => (
                 <div key={project.Id} className="mb-5 last:mb-0">
                   <img
