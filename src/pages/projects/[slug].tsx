@@ -37,11 +37,23 @@ export default function Project({ project }: any) {
 
               <Link href={`${project.Link}`}>
                 <a
-                  className="text-primary-500 border-none font-semibold text-sm uppercase hover:text-red-500"
+                  className="text-primary-500 border-none font-semibold text-sm uppercase hover:text-red-500 transition"
                   target="_blank"
                   rel="nofollow noreferrer"
                 >
                   Visit site
+                  <svg
+                    id="arrow-forward"
+                    className="inline-block ml-1 w-[16px] translate-y-[-2px]"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"
+                    ></path>
+                  </svg>
                 </a>
               </Link>
             </div>

@@ -12,7 +12,7 @@ const Navigation = () => {
   // const router = useRouter();
   return (
     // <div className="px-4 md:px-8 pt-14 md:pt-24"></div>
-    <header className="py-1 md:py-2 px-4 md:px-8 shadow">
+    <header className="py-1 md:py-2 px-4 md:px-8 text-white  shadow">
       <nav className="flex flex-row flex-nowrap items-center justify-between max-w-screen-xl mx-auto">
         <Link href="/">
           <a className="border-0 hover:border-0">
@@ -169,6 +169,9 @@ const Navigation = () => {
             </Link>
           </li>
         </ul>
+        {/* <svg id="menu" viewBox="0 0 24 24">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+        </svg> */}
       </nav>
     </header>
   );
