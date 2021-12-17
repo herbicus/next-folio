@@ -5,7 +5,18 @@ const projects = [
     Title: 'Varonis',
     Thumbnail: 'thumb-v.png',
     Thumbnail_caption: 'Company website',
-    Images: ['/v-mbp.png', '/v-imac.png'],
+    Images: [
+      {
+        src: '/v-mbp.png',
+        width: '1000',
+        height: '604',
+      },
+      {
+        src: '/v-imac.png',
+        width: '2766',
+        height: '2191',
+      },
+    ],
     Text: [
       'Custom HubSpot theme for Varonis company website.',
       'HubSpot | ES6 | TypeScript | Webpack | GSAP',
@@ -19,7 +30,18 @@ const projects = [
     Title: 'Google Maps',
     Thumbnail: 'thumb-gmaps.png',
     Thumbnail_caption: 'Marketing website',
-    Images: ['/gm-mbp.png', '/gm-imac.png'],
+    Images: [
+      {
+        src: '/gm-mbp.png',
+        width: '1000',
+        height: '604',
+      },
+      {
+        src: '/gm-imac.png',
+        width: '2766',
+        height: '2191',
+      },
+    ],
     Text: [
       'Google Maps marketing website.',
       'Bracket | Kintaro | Flask | Jinja2 | AppEngine | SCS',
@@ -33,7 +55,18 @@ const projects = [
     Title: 'YouTube Learning',
     Thumbnail: 'thumb-ytlv1.png',
     Thumbnail_caption: 'Website',
-    Images: ['/ytl-mbp-1.png', '/ytl-imac-2.png'],
+    Images: [
+      {
+        src: '/ytl-mbp-1.png',
+        width: '1000',
+        height: '604',
+      },
+      {
+        src: '/ytl-imac-2.png',
+        width: '2766',
+        height: '2191',
+      },
+    ],
     Text: [
       'Index of eductational and informational YouTube videos.',
       'Bracket | Kintaro | YouTube API | Flask | Jinja2 | AppEngine | SCS | GSAP',
@@ -47,7 +80,18 @@ const projects = [
     Title: 'Google News',
     Thumbnail: 'logo-news.png',
     Thumbnail_caption: 'Marketing site',
-    Images: ['/mbp-news.png', '/imac-news.png'],
+    Images: [
+      {
+        src: '/mbp-news.png',
+        width: '1000',
+        height: '604',
+      },
+      {
+        src: '/imac-news.png',
+        width: '2766',
+        height: '2191',
+      },
+    ],
     Text: [
       'Google News marketing website.',
       'Bracket | Kintaro | Flask | Jinja2 | AppEngine | SCS',
@@ -61,7 +105,18 @@ const projects = [
     Title: 'Mountain View Community Shuttle',
     Thumbnail: 'thumb-mvcs.png',
     Thumbnail_caption: 'Website',
-    Images: ['/mvcs-imac-1.png', '/mvcs-mbp-2.png'],
+    Images: [
+      {
+        src: '/mvcs-mbp-2.png',
+        width: '2766',
+        height: '2191',
+      },
+      {
+        src: '/mvcs-imac-1.png',
+        width: '1000',
+        height: '604',
+      },
+    ],
     Text: [
       'Mountain View Community Shuttle general and route information website',
       'Angular | AppEngine | Google Sheets API | GSAP',
@@ -75,7 +130,18 @@ const projects = [
     Title: 'Google Health',
     Thumbnail: 'thumb-gh.png',
     Thumbnail_caption: 'Marketing site',
-    Images: ['/gh-mbp.png', '/gh-imac.png'],
+    Images: [
+      {
+        src: '/gh-mbp.png',
+        width: '1000',
+        height: '604',
+      },
+      {
+        src: '/gh-imac.png',
+        width: '2766',
+        height: '2191',
+      },
+    ],
     Text: [
       'Google Health marketing website.',
       'Bracket | Kintaro | Flask | Jinja2 | AppEngine | SCS',
@@ -89,7 +155,18 @@ const projects = [
     Title: 'Kraft Mac N’ Cheese',
     Thumbnail: 'logo-starwars.png',
     Thumbnail_caption: 'Experience',
-    Images: ['/mbp-starwars1.png', '/mbp-starwars2.png'],
+    Images: [
+      {
+        src: '/mbp-starwars1.png',
+        width: '1000',
+        height: '604',
+      },
+      {
+        src: '/mbp-starwars2.png',
+        width: '1000',
+        height: '604',
+      },
+    ],
     Text: [
       'Kraft Mac N Cheese campaign mareting site',
       'Backbone | Underscore | JQuery',
@@ -103,7 +180,18 @@ const projects = [
     Title: 'A Touch of Sweetness',
     Thumbnail: 'logo-ats.png',
     Thumbnail_caption: 'Marketing site',
-    Images: ['/mbp-ats1.png', '/mbp-ats2.png'],
+    Images: [
+      {
+        src: '/mbp-ats1.png',
+        width: '1000',
+        height: '604',
+      },
+      {
+        src: '/mbp-ats2.png',
+        width: '1000',
+        height: '604',
+      },
+    ],
     Text: [
       'This website is for a pastry chef’s company called A Touch Of Sweetness. A specialty made-to-order pastry service based in Ann Arbor, Michigan.',
       'Built using Vue.js',
@@ -117,7 +205,18 @@ const projects = [
     Title: 'HTML5 Banners',
     Thumbnail: 'thumb-banners.png',
     Thumbnail_caption: 'Display ads',
-    Images: ['/dc-studio-imac-1v2.png', '/dc-studio-imac-2v2.png'],
+    Images: [
+      {
+        src: '/dc-studio-imac-1v2.png',
+        width: '2766',
+        height: '2191',
+      },
+      {
+        src: '/dc-studio-imac-2v2.png',
+        width: '2766',
+        height: '2191',
+      },
+    ],
     Text: ['HTML5 banner/display ads', 'Double Click Studios | WebPack | GSAP'],
     A11y: 'Screenshots of Google DoublClick studio UI',
     Link: 'https://www.trakkenwebservices.com/products/doubleclick/doubleclick-studio/',

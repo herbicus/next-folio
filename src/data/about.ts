@@ -4,9 +4,9 @@ export const about = {
   canonical: 'http://www.herbtorres.com/about/',
   title: 'About',
   text: [
-    'I′m a front end developer based out of Ann Arbor, Michigan where I live with my lovely wife and two little rugrats. I′m originally from Grand Rapids, Michigan but lived in Atlanta, Georgia for a little over 20 years. I’ve always had an interest in design and user interaction. In addition, I love to solve problems, and I seem to thrive in chaotic environments. As it turns out, that is the perfect mix for a frontend developer.',
+    'I′m a front end developer based out of Ann Arbor, Michigan where I live with my lovely wife and two little rugrats. I′m originally from Grand Rapids, Michigan but lived in Atlanta, Georgia for a little over 20 years.',
     'Currenly, I am working at Hook Studios here in Ann Arbor.',
-    'When i′m not working, I spend most my free time with the family but I also have been known to shoot some basketball and play a mean Imperial Templar DPS on Elder Scrolls Online for the PS5.',
+    'I’ve always had an interest in design and user interaction. In addition, I love to solve problems, and I seem to thrive in chaotic environments. As it turns out, that is the perfect mix for a frontend developer.',
   ],
   lang_label: 'Languages, Libraries and Frameworks',
   lang_text:

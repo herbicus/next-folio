@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -25,11 +26,21 @@ const Contact = () => {
       />
 
       <div className="contact flex flex-col items-center md:items-start justify-center h-full px-4 md:px-8 pt-10 md:pt-18 relative overflow-hidden">
-        <img
+        {/* <img
           className="absolute top-2/4 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[100%] h-[100%] object-cover z-0"
           src={`${router.basePath}/assets/images/contact-bg.jpg`}
           alt={`${content.a11y}`}
           loading="lazy"
+        /> */}
+        <Image
+          src={`${router.basePath}/assets/images/contact-bg.jpg`}
+          alt={`${content.a11y}`}
+          layout="fill"
+          objectFit="cover"
+          placeholder="blur"
+          loading="eager"
+          blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNc+h8AAk8BpsJzKa8AAAAASUVORK5CYII=
+                      "
         />
 
         <div className="flex md:w-full max-w-screen-xl mx-auto relative md:pl-[3.9rem] z-10">

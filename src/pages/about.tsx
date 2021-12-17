@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -25,11 +26,21 @@ const About = () => {
         <div className="max-w-screen-lg mx-auto mb-10 md:mb-14">
           <div className="grid grid-cols-1 md:grid-cols-12 justify-items-center">
             <div className="col-span-1 md:col-span-8 pr-0 md:pr-6 mb-8 md:mb-0">
-              <img
+              {/* <img
                 src={`${router.basePath}/assets/images/about-img.jpg`}
                 alt="Herb Torres"
                 className="h-full object-cover"
                 loading="lazy"
+              /> */}
+              <Image
+                src={`${router.basePath}/assets/images/about-img.jpg`}
+                alt="Herb Torres"
+                width="1280"
+                height="800"
+                layout="intrinsic"
+                placeholder="blur"
+                priority
+                blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNc+h8AAk8BpsJzKa8AAAAASUVORK5CYII="
               />
             </div>
 
@@ -148,7 +159,7 @@ const About = () => {
               </div>
 
               {content.text.map((block: any) => (
-                <p key={content.title} className="text-base mb-4 last:mb-0">
+                <p key={block} className="text-base mb-4 last:mb-0">
                   {block}
                 </p>
               ))}

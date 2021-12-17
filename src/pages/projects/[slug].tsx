@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -73,11 +74,17 @@ export default function Project({ project }: any) {
 
             <div className="col-span-1 md:col-span-8 pl-0 md:pl-12 mt-12 md:mt-0">
               {project.Images.map((image: any) => (
-                <div key={project.Id} className="mb-5 last:mb-0">
-                  <img
-                    className="object-contain"
-                    src={`${router.basePath}/assets/images/preview/${image}`}
+                <div key={project.src} className="mb-5 last:mb-0">
+                  <Image
+                    src={`${router.basePath}/assets/images/preview${image.src}`}
                     alt={`${project.A11y}`}
+                    width={image.width}
+                    height={image.height}
+                    layout="responsive"
+                    placeholder="blur"
+                    priority
+                    blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNc+h8AAk8BpsJzKa8AAAAASUVORK5CYII=
+                      "
                   />
                 </div>
               ))}
