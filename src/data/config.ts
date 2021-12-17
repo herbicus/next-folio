@@ -1,8 +1,10 @@
 export const config = {
-  site_name: 'Starter',
-  title: 'Nextjs Starter',
-  description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
+  site_name: 'Herb Torres',
+  title: 'Herb Torres | Portfolio',
+  title_long: 'Herb Torres | Front End Developer',
+  description: 'My personal portfolio website.',
   locale: 'en',
+  root_url: 'http://www.herbtorres.com',
   herb_label: 'Herb Torres',
   nav_links: [
     {

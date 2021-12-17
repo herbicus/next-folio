@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import { config } from '../data/config';
 import projects from '../data/projects';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
@@ -12,8 +13,9 @@ const Index = () => {
     <Main
       meta={
         <Meta
-          title="Next.js Boilerplate Presentation"
-          description="Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework."
+          title={`${config.title} - ${new Date().getFullYear()}`}
+          description={config.title_long}
+          canonical={config.root_url}
         />
       }
     >

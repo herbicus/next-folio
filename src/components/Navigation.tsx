@@ -32,41 +32,41 @@ const Navigation = () => {
               <polygon
                 fill="#CD4829"
                 points="0.034,20.246 0,26.443 39.603,47.013 39.603,40.201 "
-              ></polygon>{' '}
+              ></polygon>
               <polygon
                 fill="#393A39"
                 points="6.216,23.336 39.603,6.645 39.603,0 0.034,20.246 "
-              ></polygon>{' '}
+              ></polygon>
               <polygon
                 fill="#CD4829"
                 points="19.042,16.923 32.123,23.166 41.358,18.199 28.634,12.128 "
-              ></polygon>{' '}
+              ></polygon>
               <polygon
                 fill="#CD4829"
                 points="85.513,20.467 46.11,0 46.11,6.813 79.325,23.591 "
-              ></polygon>{' '}
+              ></polygon>
               <polygon
                 fill="#393A39"
                 points="46.11,40.369 46.11,47.013 85.513,26.855 85.513,20.467 "
-              ></polygon>{' '}
+              ></polygon>
               <polygon
                 fill="#CD4829"
                 points="66.67,30.089 53.592,23.848 44.355,28.814 57.078,34.884 "
-              ></polygon>{' '}
+              ></polygon>
               <path
                 fill="#393A39"
                 d="M116.709,38.547V27.958h-7.185v10.589h-9.583V8.603h9.583V19.19h7.185V8.603h9.583v29.944H116.709z"
-              ></path>{' '}
+              ></path>
               <path
                 fill="#393A39"
                 d="M149.288,27.239h-9.582v3.643h11.739v7.666h-21.322V8.603h21.082l-1.198,7.665h-10.3v4.026h9.582V27.239z"
-              ></path>{' '}
+              ></path>
               <path
                 fill="#393A39"
                 d="M180.671,38.547H170.13l-3.928-8.913h-2.061v8.913h-9.582V8.603h15.092c6.867,0,10.301,3.498,10.301,10.493
             c0,4.791-1.484,7.955-4.457,9.489L180.671,38.547z M164.141,16.268v5.989h2.206c1.15,0,1.986-0.119,2.514-0.359
             c0.525-0.239,0.791-0.792,0.791-1.653v-1.963c0-0.864-0.266-1.414-0.791-1.653c-0.528-0.239-1.364-0.36-2.514-0.36H164.141z"
-              ></path>{' '}
+              ></path>
               <path
                 fill="#393A39"
                 d="M184.025,38.547V8.603h15.522c2.876,0,4.929,0.558,6.157,1.676c1.229,1.118,1.845,2.748,1.845,4.888
@@ -74,11 +74,11 @@ const Navigation = () => {
             c0,2.397-0.641,4.32-1.915,5.774c-1.279,1.45-3.243,2.178-5.896,2.178H184.025z M196.626,15.167h-3.02v4.455h2.972
             c1.212,0,1.82-0.741,1.82-2.227C198.398,15.909,197.806,15.167,196.626,15.167z M197.345,26.616h-3.738v4.891h3.689
             c1.34,0,2.015-0.817,2.015-2.446C199.311,27.429,198.654,26.616,197.345,26.616z"
-              ></path>{' '}
+              ></path>
               <path
                 fill="#CD4829"
                 d="M233.708,16.268h-6.947v22.279h-9.582V16.268h-6.947V8.603h23.477V16.268z"
-              ></path>{' '}
+              ></path>
               <path
                 fill="#CD4829"
                 d="M234.904,23.601c0-5.463,1.021-9.445,3.067-11.956c2.045-2.507,5.734-3.76,11.066-3.76
@@ -88,23 +88,23 @@ const Navigation = () => {
             C235.122,28.599,234.904,26.312,234.904,23.601z M245.207,18.617v12.458h3.977c1.31,0,2.259-0.149,2.851-0.458
             c0.592-0.301,0.888-0.994,0.888-2.081V16.078h-4.024c-1.28,0-2.215,0.152-2.806,0.456
             C245.501,16.835,245.207,17.533,245.207,18.617z"
-              ></path>{' '}
+              ></path>
               <path
                 fill="#CD4829"
                 d="M290.723,38.547h-10.54l-3.93-8.913h-2.06v8.913h-9.581V8.603h15.09c6.869,0,10.302,3.498,10.302,10.493
             c0,4.791-1.485,7.955-4.456,9.489L290.723,38.547z M274.193,16.268v5.989h2.204c1.15,0,1.987-0.119,2.516-0.359
             c0.525-0.239,0.789-0.792,0.789-1.653v-1.963c0-0.864-0.264-1.414-0.789-1.653c-0.528-0.239-1.365-0.36-2.516-0.36H274.193z"
-              ></path>{' '}
+              ></path>
               <path
                 fill="#CD4829"
                 d="M320.187,38.547h-10.54l-3.929-8.913h-2.06v8.913h-9.581V8.603h15.091c6.867,0,10.3,3.498,10.3,10.493
             c0,4.791-1.482,7.955-4.454,9.489L320.187,38.547z M303.658,16.268v5.989h2.205c1.148,0,1.988-0.119,2.513-0.359
             c0.528-0.239,0.792-0.792,0.792-1.653v-1.963c0-0.864-0.264-1.414-0.792-1.653c-0.524-0.239-1.364-0.36-2.513-0.36H303.658z"
-              ></path>{' '}
+              ></path>
               <path
                 fill="#CD4829"
                 d="M341.747,27.239h-9.582v3.643h11.741v7.666h-21.322V8.603h21.08l-1.197,7.665h-10.302v4.026h9.582V27.239z"
-              ></path>{' '}
+              ></path>
               <path
                 fill="#CD4829"
                 d="M345.82,38.022l1.341-7.908c2.938,0.735,5.58,1.102,7.929,1.102c2.35,0,4.241-0.095,5.679-0.285v-2.395
@@ -136,6 +136,9 @@ const Navigation = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-primary-500 focus:outline md:hidden"
+          id="hamburger"
+          aria-expanded={isOpen ? 'true' : 'false'}
+          aria-controls="sidebar"
           role="button"
         >
           <svg
@@ -171,6 +174,7 @@ const Navigation = () => {
 
       <aside
         id="sidebar"
+        aria-labelledby="hamburger"
         className={`${
           isOpen ? 'translate-x-0' : 'translate-x-[-100%]'
         } bg-white text-primary-500 md:w-64 w-3/4 space-y-6 absolute inset-y-0 left-0 h-[100vh] transform md:relative transition duration-200 ease-in-out md:hidden overflow-y-auto z-20 shadow-xl`}
@@ -187,23 +191,23 @@ const Navigation = () => {
             <polygon
               fill="#CD4829"
               points="0.034,20.246 0,26.443 39.603,47.013 39.603,40.201 "
-            ></polygon>{' '}
+            ></polygon>
             <polygon
               fill="#393A39"
               points="6.216,23.336 39.603,6.645 39.603,0 0.034,20.246 "
-            ></polygon>{' '}
+            ></polygon>
             <polygon
               fill="#CD4829"
               points="19.042,16.923 32.123,23.166 41.358,18.199 28.634,12.128 "
-            ></polygon>{' '}
+            ></polygon>
             <polygon
               fill="#CD4829"
               points="85.513,20.467 46.11,0 46.11,6.813 79.325,23.591 "
-            ></polygon>{' '}
+            ></polygon>
             <polygon
               fill="#393A39"
               points="46.11,40.369 46.11,47.013 85.513,26.855 85.513,20.467 "
-            ></polygon>{' '}
+            ></polygon>
             <polygon
               fill="#CD4829"
               points="66.67,30.089 53.592,23.848 44.355,28.814 57.078,34.884 "
@@ -212,27 +216,15 @@ const Navigation = () => {
         </div>
         <div className="bg-red-500 block h-[2px] w-16 !mt-2 ml-4"></div>
         <ul className="block px-4">
-          <li className="mb-10">
-            <Link href="/">
-              <a className="text-gray-150 border-0 hover:border-0 font-medium text-base md:text-base uppercase">
-                Home
-              </a>
-            </Link>
-          </li>
-          <li className="mb-10">
-            <Link href="/about/">
-              <a className="text-gray-150 border-0 hover:border-0 font-medium text-base md:text-base uppercase">
-                About
-              </a>
-            </Link>
-          </li>
-          <li className="mb-0">
-            <Link href="/contact/">
-              <a className="text-gray-150 border-0 hover:border-0 font-medium text-base md:text-base uppercase">
-                Contact
-              </a>
-            </Link>
-          </li>
+          {config.nav_links.map((link: any) => (
+            <li key={link.label} className="mb-10 last:mb-0">
+              <Link href={`${link.href}`}>
+                <a className="text-gray-150 border-0 hover:border-0 font-medium text-base md:text-base uppercase">
+                  {link.label}
+                </a>
+              </Link>
+            </li>
+          ))}
         </ul>
       </aside>
     </header>

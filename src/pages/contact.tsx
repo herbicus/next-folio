@@ -9,7 +9,15 @@ const Contact = () => {
   const router = useRouter();
 
   return (
-    <Main meta={<Meta title="Contact" description="Herb Torres | Contact" />}>
+    <Main
+      meta={
+        <Meta
+          title={`${content.meta_title} - ${new Date().getFullYear()}`}
+          description={content.meta_description}
+          canonical={content.canonical}
+        />
+      }
+    >
       <link
         rel="preload"
         as="image"

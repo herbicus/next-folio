@@ -1,4 +1,7 @@
 export const about = {
+  meta_title: 'Herb Torres | About',
+  meta_description: 'Herb Torres | Front End Developer',
+  canonical: 'http://www.herbtorres.com/about/',
   title: 'About',
   text: [
     'I′m a front end developer based out of Ann Arbor, Michigan where I live with my lovely wife and two little rugrats. I′m originally from Grand Rapids, Michigan but lived in Atlanta, Georgia for a little over 20 years. I’ve always had an interest in design and user interaction. In addition, I love to solve problems, and I seem to thrive in chaotic environments. As it turns out, that is the perfect mix for a frontend developer.',

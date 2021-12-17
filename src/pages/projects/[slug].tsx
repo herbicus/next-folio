@@ -12,8 +12,9 @@ export default function Project({ project }: any) {
     <Main
       meta={
         <Meta
-          title={`Herb Torres | ${project.Title}`}
-          description={`Herb Torres | Portfolio project: ${project.Title}`}
+          title={`Herb Torres | Portfolio - ${new Date().getFullYear()}`}
+          description={`Herb Torres | Portfolio project - ${project.Title}`}
+          canonical={`http://www.herbtorres.com/projects/${project.Slug}`}
         />
       }
     >

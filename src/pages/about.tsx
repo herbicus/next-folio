@@ -12,7 +12,15 @@ const About = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <Main meta={<Meta title="About" description="Herb Torres | About" />}>
+    <Main
+      meta={
+        <Meta
+          title={`${content.meta_title} - ${new Date().getFullYear()}`}
+          description={content.meta_description}
+          canonical={content.canonical}
+        />
+      }
+    >
       <div className="px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
         <div className="max-w-screen-lg mx-auto mb-10 md:mb-14">
           <div className="grid grid-cols-1 md:grid-cols-12 justify-items-center">
