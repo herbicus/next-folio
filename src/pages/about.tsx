@@ -1,3 +1,6 @@
+import { useState } from 'react';
+
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { Meta } from '../layout/Meta';
@@ -5,13 +8,14 @@ import { Main } from '../templates/Main';
 
 const About = () => {
   const router = useRouter();
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <Main meta={<Meta title="About" description="Herb Torres | About" />}>
       <div className="px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
         <div className="max-w-screen-lg mx-auto mb-10 md:mb-14">
           <div className="grid grid-cols-1 md:grid-cols-12 justify-items-center">
-            <div className="col-span-1 md:col-span-8 pr-0 md:pr-12 mb-8 md:mb-0">
+            <div className="col-span-1 md:col-span-8 pr-0 md:pr-6 mb-8 md:mb-0">
               <img
                 src={`${router.basePath}/assets/images/about-img.jpg`}
                 alt="Herb Torres"
@@ -135,32 +139,32 @@ const About = () => {
               </div>
 
               <p className="text-base mb-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Ratione fuga recusandae quidem. Quaerat molestiae blanditiis
-                doloremque possimus labore voluptatibus distinctio recusandae
-                autem esse explicabo molestias officia placeat, accusamus aut
-                saepe.
+                I`&#39;`m a front end developer based out of Ann Arbor, Michigan
+                where I live with my lovely wife and two little rugrats.
+                I`&#39;`m originally from Grand Rapids, Michigan but lived in
+                Atlanta, Georgia for a little over 20 years. I’ve always had an
+                interest in design and user interaction. In addition, I love to
+                solve problems, and I seem to thrive in chaotic environments. As
+                it turns out, that is the perfect mix for a frontend developer.
               </p>
-              <p className="text-base">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Ratione fuga recusandae quidem. Quaerat molestiae blanditiis
-                doloremque possimus labore voluptatibus distinctio recusandae
-                autem esse explicabo molestias officia placeat, accusamus aut
-                saepe.
+              <p className="text-base mb-4">
+                Currenly, I am working at Hook Studios here in Ann Arbor.
               </p>
-
-              {/* <svg id="drive-pdf" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M7 11.5h1v-1H7v1zM19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9.5 8.5c0 .83-.67 1.5-1.5 1.5H7v2H5.5V9H8c.83 0 1.5.67 1.5 1.5v1zm10-1H17v1h1.5V13H17v2h-1.5V9h4v1.5zm-5 3c0 .83-.67 1.5-1.5 1.5h-2.5V9H13c.83 0 1.5.67 1.5 1.5v3zm-2.5 0h1v-3h-1v3z"></path>
-              </svg> */}
+              <p className="text-base mb-0">
+                When i`&#39;`m not working, I spend most my free time with the
+                family but I also have been known to shoot some basketball and
+                play a mean Imperial Templar DPS on Elder Scrolls Online for the
+                PS4.
+              </p>
             </div>
           </div>
         </div>
 
         <div className="max-w-screen-md mx-auto">
-          <p className="font-semibold mb-2">
+          <p className="text-base font-semibold mb-2">
             Languages, Libraries and Frameworks
           </p>
-          <p className="mb-4">
+          <p className="text-base font-medium mb-4">
             HTML(5) | CSS(3) | LESS | SASS | Javascript | Node.js | ES6+| React
             | React Hooks | Next.js | Redux | Polymer | Vue | GSAP |
             BodyMovin.js | JSON | Google AMP | Angular.js | GIT | Firebase |
@@ -168,12 +172,84 @@ const About = () => {
             Double Click Studios | Litmus, Twitter Bootstrap | Zerb Foundation |
             Google Maps API
           </p>
-          <p className="font-semibold mb-2">Tools</p>
-          <p>
+          <p className="text-base font-semibold mb-2">Tools</p>
+          <p className="text-base font-medium">
             VSCode, GitHub Atom, Webpack, iTerm, ZSH, Gulp.js, Yeoman, jsFiddle,
             Codepen, Photoshop, Illustrator, Premiere, After Effects, Adobe
             Suite, DoubleClick Studios, Litmus, Microsoft Office, Windows/OSX
           </p>
+        </div>
+
+        <div className="max-w-screen-md mt-3 mx-auto">
+          <div
+            onClick={() => setExpanded(!expanded)}
+            className="flex flex-col py-3 border-b border-gray-150 text-inherit cursor-pointer text-primary-500 hover:text-red-500 mb-5"
+          >
+            <div className="flex pb-3 flex-row justify-between items-center">
+              <p
+                className={`flex-auto transition ${
+                  expanded ? 'font-semibold' : 'font-semibold'
+                }`}
+              >
+                <span
+                  className={`font-semibold ${expanded ? 'hidden' : 'block'}`}
+                >
+                  View more
+                </span>
+                <span
+                  className={`font-semibold ${expanded ? 'block' : 'hidden'}`}
+                >
+                  View less
+                </span>
+              </p>
+              <svg
+                id="chevron"
+                className={`text-inherit ${
+                  expanded ? 'rotate-0' : 'rotate-180'
+                }`}
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+              >
+                <path
+                  fill="currentColor"
+                  d="M10.6,8L6,3.4L1.4,8L0,6.6l6-6l6,6L10.6,8z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              className={`transition-height duration-300 ease-out overflow-hidden ${
+                expanded ? 'h-96' : 'h-0'
+              }`}
+            >
+              <iframe
+                className="w-full h-full p-0 m-0"
+                src="https://docs.google.com/document/d/e/2PACX-1vSGaf30h4YUy21Lvkyb0imrTslMR47tKmUgXX0UxxJuePfG7lqGXhbGT3L3dbRuDKs-qR0T9bGsGdsi/pub?embedded=true"
+              ></iframe>
+            </div>
+          </div>
+
+          <Link href="https://drive.google.com/file/d/1pRnbta4QGcEbT9w0jYWz7LDEIfMGPRzn/view?usp=sharing">
+            <a
+              className="my-6 transition font-semibold text-primary-500 hover:text-red-500 hover:border-0"
+              target="_blank"
+              rel="noreferrer nofollow"
+            >
+              View resume
+              <svg
+                id="drive-pdf"
+                className="inline-block ml-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M7 11.5h1v-1H7v1zM19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9.5 8.5c0 .83-.67 1.5-1.5 1.5H7v2H5.5V9H8c.83 0 1.5.67 1.5 1.5v1zm10-1H17v1h1.5V13H17v2h-1.5V9h4v1.5zm-5 3c0 .83-.67 1.5-1.5 1.5h-2.5V9H13c.83 0 1.5.67 1.5 1.5v3zm-2.5 0h1v-3h-1v3z"
+                ></path>
+              </svg>
+            </a>
+          </Link>
         </div>
       </div>
     </Main>

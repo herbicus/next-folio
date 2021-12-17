@@ -2,11 +2,12 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { Meta } from '../layout/Meta';
-import projects from '../projects';
 import { Main } from '../templates/Main';
+import { AppConfig } from '../utils/AppConfig';
 
 const Index = () => {
   const router = useRouter();
+  const projects = AppConfig.projects as any;
 
   return (
     <Main
@@ -71,7 +72,7 @@ const Index = () => {
 };
 
 export async function getStaticProps() {
-  const posts = projects;
+  const posts = AppConfig.projects;
 
   return {
     props: { posts },

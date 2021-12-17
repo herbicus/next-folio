@@ -2,8 +2,10 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { Meta } from '../../layout/Meta';
-import projects from '../../projects';
 import { Main } from '../../templates/Main';
+import { AppConfig } from '../../utils/AppConfig';
+
+const projects = AppConfig.projects as any;
 
 export default function Project({ project }: any) {
   const router = useRouter();
