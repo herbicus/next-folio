@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 // import { useRouter } from 'next/router';
 
-// import { AppConfig } from '../utils/AppConfig';
+import { config } from '../data/config';
 
 // type IMainProps = {
 //   meta: ReactNode;
@@ -119,36 +119,18 @@ const Navigation = () => {
         </Link>
 
         <ul className="hidden md:flex flex-wrap">
-          <li className="mr-6">
-            <Link href="/">
-              <a
-                className="text-gray-150 transition border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500"
-                title="Home"
-              >
-                Home
-              </a>
-            </Link>
-          </li>
-          <li className="mr-6">
-            <Link href="/about/">
-              <a
-                className="text-gray-150 transition border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500"
-                title="About"
-              >
-                About
-              </a>
-            </Link>
-          </li>
-          <li className="mr-0">
-            <Link href="/contact/">
-              <a
-                className="text-gray-150 transition border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500"
-                title="Contact"
-              >
-                Contact
-              </a>
-            </Link>
-          </li>
+          {config.nav_links.map((link: any) => (
+            <li key={link.label} className="mr-6 last:mr-0">
+              <Link href={`${link.href}`}>
+                <a
+                  className="text-gray-150 transition border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500"
+                  title="Home"
+                >
+                  {link.label}
+                </a>
+              </Link>
+            </li>
+          ))}
         </ul>
 
         <button

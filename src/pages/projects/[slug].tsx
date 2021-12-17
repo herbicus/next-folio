@@ -1,11 +1,9 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import projects from '../../data/projects';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
-import { AppConfig } from '../../utils/AppConfig';
-
-const projects = AppConfig.projects as any;
 
 export default function Project({ project }: any) {
   const router = useRouter();
@@ -15,7 +13,7 @@ export default function Project({ project }: any) {
       meta={
         <Meta
           title={`Herb Torres | ${project.Title}`}
-          description={`Herb Torres | ${project.Title}`}
+          description={`Herb Torres | Portfolio project: ${project.Title}`}
         />
       }
     >

@@ -1,13 +1,12 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import projects from '../data/projects';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
-import { AppConfig } from '../utils/AppConfig';
 
 const Index = () => {
   const router = useRouter();
-  const projects = AppConfig.projects as any;
 
   return (
     <Main
@@ -20,13 +19,17 @@ const Index = () => {
     >
       <div className="px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
         <div className="max-w-screen-lg mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 justify-items-center">
             {projects.map((project: any) => (
-              <figure key={project.Id} className="relative text-center">
+              <figure
+                key={project.Id}
+                className="relative h-0 pb-[100%] md-auto w-full text-center"
+              >
                 <Link href={`/projects/${project.Slug}`}>
                   <a className="project" title={`${project.Title}`}>
                     <img
-                      className="object-contain"
+                      className="absolute object-contain top-0 left-0
+                      w-full"
                       src={`${router.basePath}/assets/images/thumbnails/${project.Thumbnail}`}
                       alt={`${project.Title}`}
                       loading="lazy"
@@ -72,7 +75,7 @@ const Index = () => {
 };
 
 export async function getStaticProps() {
-  const posts = AppConfig.projects;
+  const posts = projects;
 
   return {
     props: { posts },

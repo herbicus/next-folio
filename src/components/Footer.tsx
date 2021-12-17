@@ -1,21 +1,23 @@
 import Link from 'next/link';
 
-import { AppConfig } from '../utils/AppConfig';
+import { config } from '../data/config';
 
 const Footer = () => {
   return (
     <footer className="border-0 bg-primary-500 py-10 px-4 md:px-8 text-sm">
       <nav className="max-w-screen-xl mx-auto flex flex-wrap justify-end sm:justify-between items-center">
         <p className="text-gray-150 text-xs hidden sm:block">
-          © {new Date().getFullYear()} {AppConfig.footer_label}
+          © {new Date().getFullYear()} {config.herb_label}
         </p>
+
         <ul className="flex flex-nowrap">
           <li className="mr-6">
-            <Link href="https://www.linkedin.com/in/herb-torres-7b5aa1a1">
+            <Link href={`${config.linkedin_src}`}>
               <a
                 className="transition text-white border-0 hover:border-0 hover:text-[#cd4828]"
                 target="_blank"
                 rel="nofollow noreferrer"
+                title="Linkedin"
               >
                 <svg
                   id="post-linkedin"
@@ -33,11 +35,12 @@ const Footer = () => {
             </Link>
           </li>
           <li className="mr-6">
-            <Link href="https://www.instagram.com/herb_torres/">
+            <Link href={`${config.instagram_src}`}>
               <a
                 className="transition text-white border-0 hover:border-0 hover:text-[#cd4828]"
                 target="_blank"
                 rel="nofollow noreferrer"
+                title="Instagram"
               >
                 <svg
                   id="instagram"
@@ -55,11 +58,12 @@ const Footer = () => {
             </Link>
           </li>
           <li className="mr-6">
-            <Link href="https://codepen.io/herbicus">
+            <Link href={`${config.codepen_src}`}>
               <a
                 className="transition text-white border-0 hover:border-0 hover:text-[#cd4828]"
                 target="_blank"
                 rel="nofollow noreferrer"
+                title="Codepen"
               >
                 <svg
                   id="codepen"
@@ -101,11 +105,12 @@ const Footer = () => {
             </Link>
           </li>
           <li className="mr-6">
-            <Link href="https://www.facebook.com/herb.torres.73">
+            <Link href={`${config.facebook_src}`}>
               <a
                 className="transition text-white border-0 hover:border-0 hover:text-[#cd4828]"
                 target="_blank"
                 rel="nofollow noreferrer"
+                title="Facebook"
               >
                 <svg
                   id="post-facebook"
