@@ -3,6 +3,11 @@ export const about = {
   meta_description: 'Herb Torres | Front End Developer',
   canonical: 'http://www.herbtorres.com/about/',
   title: 'About',
+  image: {
+    src: 'about-me-grid_tiny.jpg',
+    width: '1280',
+    height: '800',
+  },
   text: [
     'I′m a front end developer based out of Ann Arbor, Michigan where I live with my lovely wife and two little rugrats. I′m originally from Grand Rapids, Michigan but lived in Atlanta, Georgia for a little over 20 years.',
     'Currenly, I am working at Hook Studios here in Ann Arbor.',
@@ -17,5 +22,5 @@ export const about = {
   iframe_src:
     'https://docs.google.com/document/d/e/2PACX-1vSGaf30h4YUy21Lvkyb0imrTslMR47tKmUgXX0UxxJuePfG7lqGXhbGT3L3dbRuDKs-qR0T9bGsGdsi/pub?embedded=true',
   pdf_src:
-    'https://drive.google.com/file/d/1pRnbta4QGcEbT9w0jYWz7LDEIfMGPRzn/view?usp=sharing',
+    'https://drive.google.com/file/d/1vm62SAbGzZeWgk-0OJADLa6qyr2-TJEB/view?usp=sharing',
 };

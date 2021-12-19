@@ -34,7 +34,7 @@ const Index = () => {
                       w-full"
                       src={`${router.basePath}/assets/images/thumbnails/${project.Thumbnail}`}
                       alt={`${project.Title}`}
-                      loading="lazy"
+                      loading="eager"
                     />
                     <figcaption className="absolute top-2/4 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[100%] text-gray-900">
                       <p className="font-display font-black text-lg mb-1">

@@ -7,12 +7,12 @@ const projects = [
     Thumbnail_caption: 'Company website',
     Images: [
       {
-        src: '/v-mbp.png',
+        src: 'v-mbp.png',
         width: '1000',
         height: '604',
       },
       {
-        src: '/v-imac.png',
+        src: 'v-imac.png',
         width: '2766',
         height: '2191',
       },
@@ -32,12 +32,12 @@ const projects = [
     Thumbnail_caption: 'Marketing website',
     Images: [
       {
-        src: '/gm-mbp.png',
+        src: 'gm-mbp.png',
         width: '1000',
         height: '604',
       },
       {
-        src: '/gm-imac.png',
+        src: 'gm-imac.png',
         width: '2766',
         height: '2191',
       },
@@ -57,12 +57,12 @@ const projects = [
     Thumbnail_caption: 'Website',
     Images: [
       {
-        src: '/ytl-mbp-1.png',
+        src: 'ytl-mbp-1.png',
         width: '1000',
         height: '604',
       },
       {
-        src: '/ytl-imac-2.png',
+        src: 'ytl-imac-2.png',
         width: '2766',
         height: '2191',
       },
@@ -82,12 +82,12 @@ const projects = [
     Thumbnail_caption: 'Marketing site',
     Images: [
       {
-        src: '/mbp-news.png',
+        src: 'mbp-news.png',
         width: '1000',
         height: '604',
       },
       {
-        src: '/imac-news.png',
+        src: 'imac-news.png',
         width: '2766',
         height: '2191',
       },
@@ -107,12 +107,12 @@ const projects = [
     Thumbnail_caption: 'Website',
     Images: [
       {
-        src: '/mvcs-mbp-2.png',
+        src: 'mvcs-mbp-2.png',
         width: '2766',
         height: '2191',
       },
       {
-        src: '/mvcs-imac-1.png',
+        src: 'mvcs-imac-1.png',
         width: '1000',
         height: '604',
       },
@@ -132,12 +132,12 @@ const projects = [
     Thumbnail_caption: 'Marketing site',
     Images: [
       {
-        src: '/gh-mbp.png',
+        src: 'gh-mbp.png',
         width: '1000',
         height: '604',
       },
       {
-        src: '/gh-imac.png',
+        src: 'gh-imac.png',
         width: '2766',
         height: '2191',
       },
@@ -157,19 +157,19 @@ const projects = [
     Thumbnail_caption: 'Experience',
     Images: [
       {
-        src: '/mbp-starwars1.png',
+        src: 'mbp-starwars1.png',
         width: '1000',
         height: '604',
       },
       {
-        src: '/mbp-starwars2.png',
+        src: 'mbp-starwars2.png',
         width: '1000',
         height: '604',
       },
     ],
     Text: [
       'Kraft Mac N Cheese campaign mareting site',
-      'Backbone | Underscore | JQuery',
+      'Backbone | Underscore | GSAP',
     ],
     A11y: 'Screenshots of Kraft StarWars site',
     Link: 'http://dev.herbtorres.com/kraft-star-wars/',
@@ -182,19 +182,19 @@ const projects = [
     Thumbnail_caption: 'Marketing site',
     Images: [
       {
-        src: '/mbp-ats1.png',
+        src: 'mbp-ats1.png',
         width: '1000',
         height: '604',
       },
       {
-        src: '/mbp-ats2.png',
+        src: 'mbp-ats2.png',
         width: '1000',
         height: '604',
       },
     ],
     Text: [
       'This website is for a pastry chef’s company called A Touch Of Sweetness. A specialty made-to-order pastry service based in Ann Arbor, Michigan.',
-      'Built using Vue.js',
+      'Vue | GSAP',
     ],
     A11y: 'Screenshots of A Touch of Sweetness site',
     Link: 'http://www.a2touchofsweetness.com/',
@@ -207,12 +207,12 @@ const projects = [
     Thumbnail_caption: 'Display ads',
     Images: [
       {
-        src: '/dc-studio-imac-1v2.png',
+        src: 'dc-studio-imac-1v2.png',
         width: '2766',
         height: '2191',
       },
       {
-        src: '/dc-studio-imac-2v2.png',
+        src: 'dc-studio-imac-2v2.png',
         width: '2766',
         height: '2191',
       },
