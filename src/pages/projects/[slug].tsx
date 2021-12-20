@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import projects from '../../data/projects';
+import { projects } from '../../data/projects';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
 
@@ -34,10 +34,10 @@ export default function Project({ project }: any) {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-12">
             <div className="col-span-1 sm:col-span-6 md:col-span-4">
-              <h1 className="font-display font-black text-3xl md:text-4xl mb-5">
+              <h1 className="font-sans font-medium text-3xl md:text-4xl mb-5">
                 {project.Title}
               </h1>
-              <h2 className="font-sans font-semibold text-lg md:text-xl mb-5">
+              <h2 className="font-display font-black uppercase text-sm mb-5">
                 {project.Thumbnail_caption}
               </h2>
               <div className="mb-8">
@@ -75,7 +75,7 @@ export default function Project({ project }: any) {
                   <a className="transition font-semibold uppercase text-primary-500 hover:text-red-500 hover:border-0">
                     <svg
                       id="chevron"
-                      className="inline-block mr-1 text-inherit rotate-[-90deg] translate-y-[-1.5px]"
+                      className="inline-block mr-1 text-inherit rotate-[-90deg] translate-y-[-1px]"
                       width="12"
                       height="8"
                       viewBox="0 0 12 8"

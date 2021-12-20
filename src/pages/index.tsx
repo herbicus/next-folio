@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { config } from '../data/config';
-import projects from '../data/projects';
+import { projects } from '../data/projects';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
 

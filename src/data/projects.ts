@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     Id: 0,
     Slug: 'varonis',
@@ -19,7 +19,7 @@ const projects = [
     ],
     Text: [
       'Custom HubSpot theme for Varonis company website.',
-      'HubSpot | ES6 | TypeScript | Webpack | GSAP',
+      'HubSpot | TypeScript | Webpack | GSAP',
     ],
     A11y: 'Screenshots of Varonis site',
     Link: 'https://www.varonis.com/',
@@ -44,7 +44,7 @@ const projects = [
     ],
     Text: [
       'Google Maps marketing website.',
-      'Bracket | Kintaro | Flask | Jinja2 | AppEngine | SCS',
+      'Bracket | Kintaro | Flask | Jinja2 | AppEngine | Webpack',
     ],
     A11y: 'Screenshots of Google Maps site',
     Link: 'https://maps.google.com/about/',
@@ -69,7 +69,7 @@ const projects = [
     ],
     Text: [
       'Index of eductational and informational YouTube videos.',
-      'Bracket | Kintaro | YouTube API | Flask | Jinja2 | AppEngine | SCS | GSAP',
+      'Bracket | Kintaro | YouTube API | Flask | Jinja2 | AppEngine | GSAP',
     ],
     A11y: 'Screenshots of YouTube Learning site',
     Link: 'https://learnathome.withyoutube.com/',
@@ -94,7 +94,7 @@ const projects = [
     ],
     Text: [
       'Google News marketing website.',
-      'Bracket | Kintaro | Flask | Jinja2 | AppEngine | SCS',
+      'TypeScript | Bracket | Kintaro | Flask | Jinja2 | AppEngine | Webpack',
     ],
     A11y: 'Screenshots of Google News marketing site',
     Link: 'https://news.google.com/about/',
@@ -144,7 +144,7 @@ const projects = [
     ],
     Text: [
       'Google Health marketing website.',
-      'Bracket | Kintaro | Flask | Jinja2 | AppEngine | SCS',
+      'TypeScript | Bracket | Kintaro | Flask | Jinja2 | AppEngine | Webpack',
     ],
     A11y: 'Screenshots of Google Health site',
     Link: 'https://health.google/',
@@ -179,7 +179,7 @@ const projects = [
     Slug: 'touch-of-sweetness',
     Title: 'A Touch of Sweetness',
     Thumbnail: 'logo-ats.png',
-    Thumbnail_caption: 'Marketing site',
+    Thumbnail_caption: 'Company website',
     Images: [
       {
         src: 'mbp-ats1.png',
@@ -216,12 +216,10 @@ const projects = [
     ],
     Text: [
       'HTML5 banner/display ads.',
-      'Double Click Studios | WebPack | GSAP',
+      'Double Click Studios | Webpack | GSAP',
     ],
     A11y: 'Screenshots of Google DoublClick studio UI',
     // Link: 'https://www.trakkenwebservices.com/products/doubleclick/doubleclick-studio/',
     Link: null,
   },
 ];
-
-export default projects as any;
