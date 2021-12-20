@@ -118,7 +118,7 @@ const projects = [
       },
     ],
     Text: [
-      'Mountain View Community Shuttle general and route information website',
+      'Mountain View Community Shuttle general and route information website.',
       'Angular | AppEngine | Google Sheets API | GSAP',
     ],
     A11y: 'Screenshots of MVC shuttle site',
@@ -147,7 +147,7 @@ const projects = [
       'Bracket | Kintaro | Flask | Jinja2 | AppEngine | SCS',
     ],
     A11y: 'Screenshots of Google Health site',
-    Link: 'http://www.a2touchofsweetness.com/',
+    Link: 'https://health.google/',
   },
   {
     Id: 6,
@@ -168,7 +168,7 @@ const projects = [
       },
     ],
     Text: [
-      'Kraft Mac N Cheese campaign mareting site',
+      'Kraft Mac N Cheese campaign marketing site/experience.',
       'Backbone | Underscore | GSAP',
     ],
     A11y: 'Screenshots of Kraft StarWars site',
@@ -192,10 +192,7 @@ const projects = [
         height: '604',
       },
     ],
-    Text: [
-      'This website is for a pastry chef’s company called A Touch Of Sweetness. A specialty made-to-order pastry service based in Ann Arbor, Michigan.',
-      'Vue | GSAP',
-    ],
+    Text: ['Company website for A Touch of Sweetness bakery.', 'Vue | GSAP'],
     A11y: 'Screenshots of A Touch of Sweetness site',
     Link: 'http://www.a2touchofsweetness.com/',
   },
@@ -217,9 +214,13 @@ const projects = [
         height: '2191',
       },
     ],
-    Text: ['HTML5 banner/display ads', 'Double Click Studios | WebPack | GSAP'],
+    Text: [
+      'HTML5 banner/display ads.',
+      'Double Click Studios | WebPack | GSAP',
+    ],
     A11y: 'Screenshots of Google DoublClick studio UI',
-    Link: 'https://www.trakkenwebservices.com/products/doubleclick/doubleclick-studio/',
+    // Link: 'https://www.trakkenwebservices.com/products/doubleclick/doubleclick-studio/',
+    Link: null,
   },
 ];
 

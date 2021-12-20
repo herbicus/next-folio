@@ -13,11 +13,11 @@ export const config = {
     },
     {
       label: 'About',
-      href: '/about/',
+      href: '/about',
     },
     {
       label: 'Contact',
-      href: '/contact/',
+      href: '/contact',
     },
   ],
   linkedin_src: 'https://www.linkedin.com/in/herb-torres-7b5aa1a1',

@@ -22,7 +22,7 @@ export default function Project({ project }: any) {
         <div className="max-w-screen-lg mx-auto relative">
           <div className="absolute top-0 right-0 md:right-[-24px]">
             <Link href="/">
-              <a className="border-0 hover:border-0 text-gray-150 hover:text-primary-500">
+              <a className="border-0 transition hover:border-0 text-gray-150 hover:text-primary-500">
                 <svg id="close" width="24" height="24" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
@@ -48,27 +48,47 @@ export default function Project({ project }: any) {
                 ))}
               </div>
 
-              <Link href={`${project.Link}`}>
-                <a
-                  className="text-primary-500 border-none font-semibold text-sm uppercase hover:text-red-500 transition"
-                  target="_blank"
-                  rel="nofollow noreferrer"
-                >
-                  Visit site
-                  <svg
-                    id="arrow-forward"
-                    className="inline-block ml-1 w-[16px] translate-y-[-2px]"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
+              {project.Link !== null ? (
+                <Link href={`${project.Link}`}>
+                  <a
+                    className="text-primary-500 border-none font-semibold text-sm uppercase hover:text-red-500 transition"
+                    target="_blank"
+                    rel="nofollow noreferrer"
                   >
-                    <path
-                      fill="currentColor"
-                      d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"
-                    ></path>
-                  </svg>
-                </a>
-              </Link>
+                    Visit site
+                    <svg
+                      id="arrow-forward"
+                      className="inline-block ml-1 w-[16px] translate-y-[-2px]"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"
+                      ></path>
+                    </svg>
+                  </a>
+                </Link>
+              ) : (
+                <Link href="/">
+                  <a className="transition font-semibold uppercase text-primary-500 hover:text-red-500 hover:border-0">
+                    <svg
+                      id="chevron"
+                      className="inline-block mr-1 text-inherit rotate-[-90deg] translate-y-[-1.5px]"
+                      width="12"
+                      height="8"
+                      viewBox="0 0 12 8"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M10.6,8L6,3.4L1.4,8L0,6.6l6-6l6,6L10.6,8z"
+                      ></path>
+                    </svg>
+                    Back
+                  </a>
+                </Link>
+              )}
             </div>
 
             <div className="col-span-1 md:col-span-8 pl-0 md:pl-12 mt-12 md:mt-0">

@@ -1,18 +1,12 @@
-/* eslint-disable no-console */
 import { useState } from 'react';
 
 import Link from 'next/link';
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 
 import { config } from '../data/config';
 
-// type IMainProps = {
-//   meta: ReactNode;
-//   children: ReactNode;
-// };
-
 const Navigation = () => {
-  // const router = useRouter();
+  const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -123,8 +117,12 @@ const Navigation = () => {
             <li key={link.label} className="mr-6 last:mr-0">
               <Link href={`${link.href}`}>
                 <a
-                  className="text-gray-150 transition border-0 hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500"
-                  title="Home"
+                  className={`text-gray-150 transition hover:border-b-2 hover:border-[#cd4828] font-medium text-sm md:text-base uppercase hover:text-primary-500 ${
+                    router.pathname === `${link.href}`
+                      ? 'text-primary-500 border-b-2 border-red-500'
+                      : 'border-0'
+                  }`}
+                  title={link.label}
                 >
                   {link.label}
                 </a>
@@ -219,7 +217,14 @@ const Navigation = () => {
           {config.nav_links.map((link: any) => (
             <li key={link.label} className="mb-10 last:mb-0">
               <Link href={`${link.href}`}>
-                <a className="text-gray-150 border-0 hover:border-0 font-medium text-base md:text-base uppercase">
+                <a
+                  className={`text-gray-150 border-0 hover:border-0 font-medium text-base md:text-base uppercase ${
+                    router.pathname === link.href
+                      ? 'text-primary-500 border-b-2 border-red-500'
+                      : 'border-0'
+                  }`}
+                  title={link.label}
+                >
                   {link.label}
                 </a>
               </Link>
