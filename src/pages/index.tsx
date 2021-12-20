@@ -20,17 +20,17 @@ const Index = () => {
       }
     >
       <div className="px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
-        <div className="max-w-screen-lg mx-auto">
+        <div className="max-w-screen-lg mx-auto min-h-screen">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 justify-items-center">
             {projects.map((project: any) => (
-              <figure
-                key={project.Id}
-                className="relative h-0 pb-[100%] md-auto w-full text-center"
-              >
-                <Link href={`/projects/${project.Slug}`}>
-                  <a className="project" title={`${project.Title}`}>
+              <Link href={`/projects/${project.Slug}`} key={project.Id}>
+                <a
+                  className="project hover:border-0"
+                  title={`${project.Title}`}
+                >
+                  <figure className="relative flex flex-col justify-start items-center md-auto w-full text-center">
                     <img
-                      className="absolute object-contain top-0 left-0
+                      className="relative object-contain
                       w-full"
                       src={`${router.basePath}/assets/images/thumbnails/${project.Thumbnail}`}
                       alt={`${project.Title}`}
@@ -44,33 +44,12 @@ const Index = () => {
                         {project.Thumbnail_caption}
                       </p>
                     </figcaption>
-                  </a>
-                </Link>
-              </figure>
+                  </figure>
+                </a>
+              </Link>
             ))}
           </div>
         </div>
-
-        {/* <h1 className="font-display font-extrabold text-5xl md:text-6xl">
-          Headline 1 extrabold
-        </h1>
-        <h1 className="font-display font-black text-5xl md:text-6xl">
-          Headline 1 black
-        </h1>
-        <h2 className="font-display font-bold text-4xl md:text-5xl">
-          Headline 2
-        </h2>
-        <h3 className="font-sans font-semibold text-3xl md:text-4xl">
-          Headline 3
-        </h3>
-        <h4 className="font-sans font-semibold text-2xl md:text-3xl">
-          Headline 4
-        </h4>
-        <h5 className="font-sans text-2xl">Headline 5</h5>
-        <h6 className="font-sans text-xl">Headline 6</h6>
-        <p className="font-sans text-base">Paragraph</p>
-        <p className="font-sans text-sm">Paragraph small</p>
-        <p className="font-sans text-xs">Paragraph extrasmall</p> */}
       </div>
     </Main>
   );

@@ -163,7 +163,7 @@ const Navigation = () => {
                 <a
                   className={`text-gray-150 transition hover:border-0 font-medium text-sm md:text-base uppercase hover:text-primary-500 ${
                     router.pathname === `${link.href}`
-                      ? 'text-primary-500 !border-b-2 !border-red-500'
+                      ? 'text-primary-500 pb-4 !border-b-4 !border-red-500'
                       : 'border-0'
                   }`}
                   title={link.label}
@@ -324,7 +324,7 @@ const Navigation = () => {
                 <a
                   className={`text-gray-150 border-0 hover:border-0 font-medium text-base md:text-base uppercase ${
                     router.pathname === link.href
-                      ? 'text-primary-500 border-b-2 border-red-500'
+                      ? 'text-primary-500 border-b-2 pb-2 border-red-500'
                       : 'border-0'
                   }`}
                   title={link.label}

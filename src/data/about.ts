@@ -10,7 +10,7 @@ export const about = {
   },
   text: [
     'I′m a front end developer based out of Ann Arbor, Michigan where I live with my lovely wife and two little rugrats. I′m originally from Grand Rapids, Michigan but lived in Atlanta, Georgia for a little over 20 years.',
-    'Currenly, I am working at Hook Studios here in Ann Arbor.',
+    'Currenly, I am working at <a href="www.byhook.com" target="_blank" rel="noreferrer nofollow>Hook Studios</a> here in Ann Arbor.',
     'I’ve always had an interest in design and user interaction. In addition, I love to solve problems, and I seem to thrive in chaotic environments. As it turns out, that is the perfect mix for a frontend developer.',
   ],
   lang_label: 'Languages, Libraries and Frameworks',

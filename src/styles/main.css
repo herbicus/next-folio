@@ -41,10 +41,12 @@ span {
 }
 
 @media screen and (min-width: 768px) {
+  .project:focus img,
   .project:hover img {
     opacity: .125;
   }
 
+  .project:focus figcaption,
   .project:hover figcaption {
     opacity: 1;
   }

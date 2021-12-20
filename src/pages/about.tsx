@@ -166,18 +166,20 @@ const About = () => {
 
         <div className="max-w-screen-md mx-auto">
           <p className="text-base font-semibold mb-2">{content.lang_label}</p>
-          <p className="text-base font-medium mb-4">{content.lang_text}</p>
+          <p className="text-base mb-4">{content.lang_text}</p>
           <p className="text-base font-semibold mb-2">{content.tools_label}</p>
-          <p className="text-base font-medium">{content.tools_text}</p>
+          <p className="text-base">{content.tools_text}</p>
         </div>
 
         <div className="max-w-screen-md mt-3 mx-auto">
-          <div
+          <button
             onClick={() => setExpanded(!expanded)}
-            className="flex flex-col py-3 border-b border-gray-150 text-inherit cursor-pointer text-primary-500 hover:text-red-500 mb-5"
+            className="py-3 border-b border-gray-150 text-inherit cursor-pointer text-primary-500 hover:text-red-500 w-full mb-5"
             id="accordion_button"
             aria-expanded={expanded ? 'true' : 'false'}
             aria-controls="accordion_body"
+            role="button"
+            tabIndex={0}
           >
             <div
               className="flex pb-3 flex-row justify-between items-center"
@@ -185,7 +187,7 @@ const About = () => {
               aria-labelledby="accordion_button"
             >
               <p
-                className={`flex-auto transition ${
+                className={`transition ${
                   expanded ? 'font-semibold' : 'font-semibold'
                 }`}
               >
@@ -203,7 +205,7 @@ const About = () => {
               <svg
                 id="chevron"
                 className={`text-inherit ${
-                  expanded ? 'rotate-0' : 'rotate-180'
+                  expanded ? 'rotate-0 focus:rotate-0' : 'rotate-180'
                 }`}
                 width="12"
                 height="8"
@@ -225,7 +227,7 @@ const About = () => {
                 src={`${content.iframe_src}`}
               ></iframe>
             </div>
-          </div>
+          </button>
 
           <Link href={`${content.pdf_src}`}>
             <a
