@@ -27,7 +27,7 @@ const About = () => {
         href={`${router.basePath}/assets/images/${content.image.src}`}
       />
 
-      <div className="px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
+      <div className="min-h-[80vh] px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
         <div className="max-w-screen-lg mx-auto mb-10 md:mb-14">
           <div className="grid grid-cols-1 md:grid-cols-12 justify-items-center">
             <div className="col-span-1 md:col-span-8 pr-0 md:pr-5 mb-8 md:mb-0">

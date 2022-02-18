@@ -19,7 +19,7 @@ export default function Project({ project }: any) {
       }
     >
       <div className="px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
-        <div className="max-w-screen-lg mx-auto relative">
+        <div className="max-w-screen-lg min-h-[80vh] mx-auto relative">
           <div className="absolute top-0 right-0 md:right-[-24px]">
             <Link href="/">
               <a className="border-0 transition hover:border-0 text-gray-150 hover:text-primary-500">
