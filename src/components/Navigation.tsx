@@ -12,10 +12,10 @@ const Navigation = () => {
 
   return (
     <header
-      className="py-1 md:py-2 px-4 md:px-8 text-white shadow"
+      className="py-1 px-4 text-white shadow md:py-2 md:px-8"
       aria-expanded={isOpen ? 'true' : 'false'}
     >
-      <nav className="flex flex-row flex-nowrap items-center justify-start md:justify-between max-w-screen-xl mx-auto">
+      <nav className="flex flex-row flex-nowrap justify-start items-center mx-auto max-w-screen-xl md:justify-between">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={`focus:outline mr-6 md:hidden ${
@@ -156,7 +156,7 @@ const Navigation = () => {
           </a>
         </Link>
 
-        <ul className="hidden md:flex flex-wrap" role="list">
+        <ul className="hidden flex-wrap md:flex" role="list">
           {config.nav_links.map((link: any) => (
             <li key={link.label} className="mr-6 last:mr-0" role="listitem">
               <Link href={`${link.href}`}>
@@ -184,7 +184,7 @@ const Navigation = () => {
           isOpen ? 'translate-x-0' : 'translate-x-[-100%]'
         } bg-white text-primary-500 md:w-64 w-3/4 space-y-6 fixed inset-y-0 left-0 h-[100vh] transform md:relative transition duration-200 ease-in-out md:hidden overflow-y-auto z-20 shadow-xl`}
       >
-        <div className="pt-1 pb-1 pl-[.925em] shadow">
+        <div className="py-1 pl-[.925em] shadow">
           <Link href="/">
             <a className="border-0 hover:border-0" title="Home">
               <svg

@@ -27,10 +27,10 @@ const About = () => {
         href={`${router.basePath}/assets/images/${content.image.src}`}
       />
 
-      <div className="min-h-[80vh] px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
-        <div className="max-w-screen-lg mx-auto mb-10 md:mb-14">
-          <div className="grid grid-cols-1 md:grid-cols-12 justify-items-center">
-            <div className="col-span-1 md:col-span-8 pr-0 md:pr-5 mb-8 md:mb-0">
+      <div className="px-4 pt-10 mb-12 min-h-[80vh] md:px-8 md:mb-16 md:pt-18">
+        <div className="mx-auto mb-10 max-w-screen-lg md:mb-14">
+          <div className="grid grid-cols-1 justify-items-center md:grid-cols-12">
+            <div className="col-span-1 pr-0 mb-8 md:col-span-8 md:pr-5 md:mb-0">
               <img
                 src={`${router.basePath}/assets/images/${content.image.src}`}
                 alt="Herb Torres"
@@ -49,7 +49,7 @@ const About = () => {
                   viewBox="0 0 96.158 9.865"
                   enableBackground="new 0 0 96.158 9.865"
                   xmlSpace="preserve"
-                  className="about-header w-full max-w-xs h-auto"
+                  className="w-full max-w-xs h-auto about-header"
                 >
                   <path
                     fill="#CD4829"
@@ -156,7 +156,7 @@ const About = () => {
               </div>
 
               {content.text.map((block: any) => (
-                <p key={block} className="text-base mb-4 last:mb-0">
+                <p key={block} className="mb-4 last:mb-0 text-base">
                   {block}
                 </p>
               ))}
@@ -164,17 +164,17 @@ const About = () => {
           </div>
         </div>
 
-        <div className="max-w-screen-md mx-auto">
-          <p className="text-base font-semibold mb-2">{content.lang_label}</p>
-          <p className="text-base mb-4">{content.lang_text}</p>
-          <p className="text-base font-semibold mb-2">{content.tools_label}</p>
+        <div className="mx-auto max-w-screen-md">
+          <p className="mb-2 text-base font-semibold">{content.lang_label}</p>
+          <p className="mb-4 text-base">{content.lang_text}</p>
+          <p className="mb-2 text-base font-semibold">{content.tools_label}</p>
           <p className="text-base">{content.tools_text}</p>
         </div>
 
-        <div className="max-w-screen-md mt-3 mx-auto">
+        <div className="mx-auto mt-3 max-w-screen-md">
           <button
             onClick={() => setExpanded(!expanded)}
-            className="py-3 border-b border-gray-150 text-inherit cursor-pointer text-primary-500 hover:text-red-500 w-full mb-5"
+            className="py-3 mb-5 w-full text-primary-500 hover:text-red-500 border-b border-gray-150 cursor-pointer"
             id="accordion_button"
             aria-expanded={expanded ? 'true' : 'false'}
             aria-controls="accordion_body"
@@ -182,7 +182,7 @@ const About = () => {
             tabIndex={0}
           >
             <div
-              className="flex pb-3 flex-row justify-between items-center"
+              className="flex flex-row justify-between items-center pb-3"
               id="accordion_body"
               aria-labelledby="accordion_button"
             >
@@ -223,7 +223,7 @@ const About = () => {
               }`}
             >
               <iframe
-                className="w-full h-full p-0 m-0"
+                className="p-0 m-0 w-full h-full"
                 src={`${content.iframe_src}`}
               ></iframe>
             </div>
@@ -231,7 +231,7 @@ const About = () => {
 
           <Link href={`${content.pdf_src}`}>
             <a
-              className="my-6 transition font-semibold text-primary-500 hover:text-red-500 hover:border-0"
+              className="my-6 font-semibold text-primary-500 hover:text-red-500 hover:border-0 transition"
               target="_blank"
               rel="noreferrer nofollow"
             >

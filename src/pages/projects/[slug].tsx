@@ -18,11 +18,11 @@ export default function Project({ project }: any) {
         />
       }
     >
-      <div className="px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
-        <div className="max-w-screen-lg min-h-[80vh] mx-auto relative">
+      <div className="px-4 pt-10 mb-12 md:px-8 md:mb-16 md:pt-18">
+        <div className="relative mx-auto max-w-screen-lg min-h-[80vh]">
           <div className="absolute top-0 right-0 md:right-[-24px]">
             <Link href="/">
-              <a className="border-0 transition hover:border-0 text-gray-150 hover:text-primary-500">
+              <a className="text-gray-150 hover:text-primary-500 border-0 hover:border-0 transition">
                 <svg id="close" width="24" height="24" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
@@ -34,15 +34,15 @@ export default function Project({ project }: any) {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-12">
             <div className="col-span-1 sm:col-span-6 md:col-span-4">
-              <h1 className="font-sans font-medium text-3xl md:text-4xl mb-5">
+              <h1 className="mb-5 font-sans text-3xl font-medium md:text-4xl">
                 {project.Title}
               </h1>
-              <h2 className="font-display font-black uppercase text-sm mb-5">
+              <h2 className="mb-5 font-display text-sm font-black uppercase">
                 {project.Thumbnail_caption}
               </h2>
               <div className="mb-8">
                 {project.Text.map((block: any) => (
-                  <p key={project.Id} className="text-base mb-5 last:mb-0">
+                  <p key={project.Id} className="mb-5 last:mb-0 text-base">
                     {block}
                   </p>
                 ))}
@@ -51,7 +51,7 @@ export default function Project({ project }: any) {
               {project.Link !== null ? (
                 <Link href={`${project.Link}`}>
                   <a
-                    className="text-primary-500 border-none font-semibold text-sm uppercase hover:text-red-500 transition"
+                    className="text-sm font-semibold text-primary-500 hover:text-red-500 uppercase border-none transition"
                     target="_blank"
                     rel="nofollow noreferrer"
                   >
@@ -72,7 +72,7 @@ export default function Project({ project }: any) {
                 </Link>
               ) : (
                 <Link href="/">
-                  <a className="transition font-semibold uppercase text-primary-500 hover:text-red-500 hover:border-0">
+                  <a className="font-semibold text-primary-500 hover:text-red-500 uppercase hover:border-0 transition">
                     <svg
                       id="chevron"
                       className="inline-block mr-1 text-inherit rotate-[-90deg] translate-y-[-1px]"
@@ -91,7 +91,7 @@ export default function Project({ project }: any) {
               )}
             </div>
 
-            <div className="col-span-1 md:col-span-8 pl-0 md:pl-12 mt-12 md:mt-0">
+            <div className="col-span-1 pl-0 mt-12 md:col-span-8 md:pl-12 md:mt-0">
               {project.Images.map((image: any) => (
                 <div key={project.Id} className="mb-5 last:mb-0">
                   <img

@@ -19,25 +19,24 @@ const Index = () => {
         />
       }
     >
-      <div className="px-4 md:px-8 pt-10 md:pt-18 mb-12 md:mb-16">
-        <div className="max-w-screen-lg mx-auto min-h-[80vh]">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 justify-items-center">
+      <div className="px-4 pt-10 mb-12 md:px-8 md:mb-16 md:pt-18">
+        <div className="mx-auto max-w-screen-lg min-h-[80vh]">
+          <div className="grid grid-cols-1 gap-5 justify-items-center sm:grid-cols-3">
             {projects.map((project: any) => (
               <Link href={`/projects/${project.Slug}`} key={project.Id}>
                 <a
-                  className="project hover:border-0"
+                  className="hover:border-0 project"
                   title={`${project.Title}`}
                 >
-                  <figure className="relative flex flex-col justify-start items-center md-auto w-full text-center">
+                  <figure className="flex relative flex-col justify-start items-center w-full text-center md-auto">
                     <img
-                      className="relative object-contain
-                      w-full"
+                      className="object-contain relative w-full"
                       src={`${router.basePath}/assets/images/thumbnails/${project.Thumbnail}`}
                       alt={`${project.Title}`}
                       loading="eager"
                     />
-                    <figcaption className="absolute top-2/4 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[100%] text-gray-900">
-                      <p className="font-display font-black text-lg mb-1">
+                    <figcaption className="absolute top-2/4 left-1/2 w-[100%] text-gray-900 translate-x-[-50%] translate-y-[-50%]">
+                      <p className="mb-1 font-display text-lg font-black">
                         {project.Title}
                       </p>
                       <p className="text-sm font-medium">

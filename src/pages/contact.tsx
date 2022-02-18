@@ -24,34 +24,34 @@ const Contact = () => {
         href={`${router.basePath}/assets/images/${content.image.src}`}
       />
 
-      <div className="contact flex flex-col items-center md:items-start justify-center h-full px-4 md:px-8 pt-10 md:pt-18 relative overflow-hidden bg-gradient-to-b from-gray-200 via-gray-300 to-gray-500">
+      <div className="flex overflow-hidden relative flex-col justify-center items-center px-4 pt-10 h-full bg-gradient-to-b from-gray-200 via-gray-300 to-gray-500 md:items-start md:px-8 contact md:pt-18">
         <img
-          className="absolute top-2/4 left-1/2 translate-x-[-50%] translate-y-[-50%] w-[100%] h-[100%] object-cover z-0"
+          className="object-cover absolute top-2/4 left-1/2 z-0 w-[100%] h-[100%] translate-x-[-50%] translate-y-[-50%]"
           src={`${router.basePath}/assets/images/${content.image.src}`}
           alt={`${content.a11y}`}
           loading="eager"
         />
 
-        <div className="flex md:w-full max-w-screen-xl mx-auto relative md:pl-[3.9rem] z-10">
-          <div className="contact-content text-white relative">
-            <div className="z-0 bg-black w-[250px] md:w-[300px] h-[250px] md:h-[300px] opacity-50 md:opacity-40 rotate-45 pointer-events-none"></div>
+        <div className="flex relative z-10 mx-auto max-w-screen-xl md:pl-[3.9rem] md:w-full">
+          <div className="relative text-white contact-content">
+            <div className="z-0 w-[250px] h-[250px] bg-black opacity-50 rotate-45 pointer-events-none md:w-[300px] md:h-[300px] md:opacity-40"></div>
 
-            <div className="flex flex-col align-middle justify-center absolute w-full h-full top-2/4 left-1/2 translate-x-[-50%] translate-y-[-50%]">
-              <h1 className="font-display font-black text-3xl md:text-4xl text-center mb-3 relative z-10">
+            <div className="flex absolute top-2/4 left-1/2 flex-col justify-center w-full h-full align-middle translate-x-[-50%] translate-y-[-50%]">
+              <h1 className="relative z-10 mb-3 font-display text-3xl font-black text-center md:text-4xl">
                 {content.title}
               </h1>
 
               <Link href={`mailto:${content.email_src}`}>
-                <a className="block text-base tracking-wide font-medium text-center text-white hover:text-red-500 transition mb-2 relative z-10 hover:border-0">
+                <a className="block relative z-10 mb-2 text-base font-medium tracking-wide text-center text-white hover:text-red-500 hover:border-0 transition">
                   {content.email_label}
                 </a>
               </Link>
               <Link href={`tel:${content.phone_src}`}>
-                <a className="block text-base tracking-wide font-medium text-center text-white hover:text-red-500 transition mb-2 relative z-10 hover:border-0">
+                <a className="block relative z-10 mb-2 text-base font-medium tracking-wide text-center text-white hover:text-red-500 hover:border-0 transition">
                   {content.phone_label}
                 </a>
               </Link>
-              <p className="text-base tracking-wide font-medium text-center relative z-10">
+              <p className="relative z-10 text-base font-medium tracking-wide text-center">
                 {content.city}
               </p>
             </div>

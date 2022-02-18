@@ -4,9 +4,9 @@ import { config } from '../data/config';
 
 const Footer = () => {
   return (
-    <footer className="border-0 bg-primary-500 py-10 px-4 md:px-8 text-sm">
-      <nav className="max-w-screen-xl mx-auto flex flex-wrap justify-end sm:justify-between items-center">
-        <p className="text-gray-150 text-xs hidden sm:block">
+    <footer className="py-10 px-4 text-sm bg-primary-500 border-0 md:px-8">
+      <nav className="flex flex-wrap justify-end items-center mx-auto max-w-screen-xl sm:justify-between">
+        <p className="hidden text-xs text-gray-150 sm:block">
           © {new Date().getFullYear()} {config.herb_label}
         </p>
 
@@ -14,7 +14,7 @@ const Footer = () => {
           <li className="mr-6">
             <Link href={`${config.linkedin_src}`}>
               <a
-                className="transition text-white border-0 hover:border-0 hover:text-[#cd4828]"
+                className="text-white hover:text-[#cd4828] border-0 hover:border-0 transition"
                 target="_blank"
                 rel="nofollow noreferrer"
                 title="Linkedin"
@@ -37,7 +37,7 @@ const Footer = () => {
           <li className="mr-6">
             <Link href={`${config.instagram_src}`}>
               <a
-                className="transition text-white border-0 hover:border-0 hover:text-[#cd4828]"
+                className="text-white hover:text-[#cd4828] border-0 hover:border-0 transition"
                 target="_blank"
                 rel="nofollow noreferrer"
                 title="Instagram"
@@ -60,7 +60,7 @@ const Footer = () => {
           <li className="mr-6">
             <Link href={`${config.codepen_src}`}>
               <a
-                className="transition text-white border-0 hover:border-0 hover:text-[#cd4828]"
+                className="text-white hover:text-[#cd4828] border-0 hover:border-0 transition"
                 target="_blank"
                 rel="nofollow noreferrer"
                 title="Codepen"
@@ -107,7 +107,7 @@ const Footer = () => {
           <li className="mr-6">
             <Link href={`${config.facebook_src}`}>
               <a
-                className="transition text-white border-0 hover:border-0 hover:text-[#cd4828]"
+                className="text-white hover:text-[#cd4828] border-0 hover:border-0 transition"
                 target="_blank"
                 rel="nofollow noreferrer"
                 title="Facebook"
